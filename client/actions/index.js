@@ -24,11 +24,11 @@ export const showError = (errorMessage) => {
   }
 }
 
-export function fetchPosts (subreddit) {
+export function fetchPosts (city) {
   return (dispatch) => {
     dispatch(requestPosts())
     return request
-      .get(`/api/v1/reddit/subreddit/${subreddit}`)
+      .get(`/api/v1/weather/weather/${city}`)
       .then(res => {
         dispatch(receivePosts(res.body))
       })
