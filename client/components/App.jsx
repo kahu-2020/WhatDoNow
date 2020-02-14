@@ -1,17 +1,14 @@
 import React from 'react'
-
-import ErrorMessage from './ErrorMessage'
-import LoadSubreddit from './LoadSubreddit'
-import SubredditList from './SubredditList'
-import WaitIndicator from './WaitIndicator'
+import Buttons from './Buttons'
+import Activity from './Activity'
+import WeatherDisplay from './WeatherDisplay'
 
 const App = () => (
   <div className='app'>
-    <ErrorMessage />
-    <LoadSubreddit>
-      <WaitIndicator />
-    </LoadSubreddit>
-    <SubredditList />
+    <h1>I'M GOING TO BE WHOLESOME <br />
+      AS FUCK AND DO SOME</h1>
+    <Activity/>
+    <Buttons/>
   </div>
 )
 
