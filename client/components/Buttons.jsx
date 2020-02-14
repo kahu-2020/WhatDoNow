@@ -14,7 +14,7 @@ class Buttons extends React.Component {
     render() { 
     return (
     <div>
-        <button onClick = {this.props.clickThing}>I'M NOT FUCKING DOING THAT</button>
+        <button className='corners' onClick = {this.props.clickThing}>I'M NOT FUCKING DOING THAT</button>
         
     </div>
     )

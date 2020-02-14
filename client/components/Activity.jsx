@@ -14,7 +14,7 @@ class Activity extends React.Component {
 render() {
     return(
 <div>
-    <h2 class = 'header'>{this.props.activity}</h2>
+    <h2 className='active'>{this.props.activity}</h2>
 </div>
     )
 }

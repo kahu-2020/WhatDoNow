@@ -27,12 +27,12 @@ class App extends React.Component {
     return (
 
       <div>
-        <h1 >I'M GOING TO BE WHOLESOME <br />
-          AS FUCK AND DO SOME</h1>
-        <Activity activity={this.state.activity.title} />
-        <Buttons clickThing={this.handleClick} />
-        <Weather />
-      </div>
+      <h1 className='header'>I'M GOING TO BE <br />
+      WHOLESOME AS FUCK, <br></br> AND DO SOME</h1>
+      <Activity activity={this.state.activity.title}/>
+      <Buttons clickThing={this.handleClick}/>
+      <Weather />
+    </div>
 
     )
   }
