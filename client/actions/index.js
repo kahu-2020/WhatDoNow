@@ -8,7 +8,8 @@ export function gotWeather(weather) {
 
   return {
     type: 'GOT_WEATHER',
-    weather: weather.consolidated_weather.map(weather => (weather.weather_state_name)),
+    weather: weather.consolidated_weather,
+
   }
 }
 
@@ -21,3 +22,5 @@ export function getWeather() {
       })
   }
 }
+
+// map(weather => (weather.weather_state_name))
