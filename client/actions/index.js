@@ -1,7 +1,6 @@
 import request from 'superagent'
 import { getWeatherApi } from '../api'
 
-
 export const GOT_WEATHER = 'GOT_WEATHER'
 
 export function gotWeather(weather) {
@@ -21,3 +20,13 @@ export function getWeather() {
       })
   }
 }
+
+export const SHOW_ERROR = 'SHOW_ERROR'
+
+
+export const getActivity = () => {
+  return {
+    type: GET_ACTIVITY
+  }
+}
+
