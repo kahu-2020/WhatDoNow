@@ -7,7 +7,7 @@ function getActivity(db = connection) {
     .select()
 }
 
-module.exports = getActivity
+module.exports = {getActivity}
 
 // route where DB function is actually called and information is responded
 // api function that visits that route from the client side and gets data

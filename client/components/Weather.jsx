@@ -11,10 +11,14 @@ class Weather extends React.Component {
  
  render() {
   return (
-  <div className='app'>
+    <div>
 
-    <p>{this.props.weather.map(weather => <li>{weather}</li>)}</p>
-
+    <ul>
+          {this.props.weather.map(weather => 
+      <li>Cloud Cover: {weather.weather_state_name} <br/>
+          Temperature: {weather.the_temp} <br/></li>)}
+    </ul>
+    
     
     
   </div>
