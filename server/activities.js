@@ -1,6 +1,6 @@
 const express = require('express')
 const request = require('superagent')
-const db = require('./db.js')
+const db = require('./db')
 
 const router = express.Router()
 
@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   
   db.getActivity()
     .then(activity => {
-      console.log(activity)
+      res.send('test')
     })
 })
 

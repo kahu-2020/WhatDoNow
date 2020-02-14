@@ -12,12 +12,17 @@ class Weather extends React.Component {
  
  render() {
   return (
-  <div className='app'>
+  <div>
 
-    <ul>
-          {this.props.weather.map(weather => 
-      <li>Cloud Cover: {weather.weather_state_name} <br/>
-          Temperature: {weather.the_temp} <br/></li>)}
+    <ul className='weather'>
+          {this.props.weather.map(weather => {
+           return (
+      <p>
+        DATE:   {new Date(weather.applicable_date).toDateString()}<br/>
+        CLOUD COVER:  {weather.weather_state_name} <br/>
+        TEMP:   {weather.the_temp} <br/>
+      </p>
+          )})}
     </ul>
     
     

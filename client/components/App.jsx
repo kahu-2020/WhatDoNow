@@ -1,22 +1,20 @@
 import React from 'react'
-
-
 import Weather from './Weather'
-
-
-
 import Buttons from './Buttons'
 import Activity from './Activity'
-import WeatherDisplay from './WeatherDisplay'
+
 
 const App = () => (
-  <div className='app'>
-    <h1>I'M GOING TO BE WHOLESOME <br />
-      AS FUCK AND DO SOME</h1>
-    <Activity/>
-    <Buttons/>
+  
 
+  <div>
+    <h1 className='header'>I'M GOING TO BE <br />
+    WHOLESOME AS FUCK, <br></br> AND DO SOME</h1>
+    <Activity />
+    <Buttons />
+    <Weather />
   </div>
+ 
 )
 
 
