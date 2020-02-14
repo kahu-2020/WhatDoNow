@@ -14,7 +14,7 @@ class Activity extends React.Component {
 render() {
     return(
 <div>
-    <h2>App building Using Redux and Thunk</h2>
+    <h2 class = 'header'>Hiking Up Mount Victoria</h2>
 </div>
     )
 }
