@@ -1,11 +1,15 @@
 import React from 'react'
-import {getWeather} from '../api'
 
+import Weather from './Weather'
 
 const App = () => (
   <div className='app'>
-    <button onClick={getWeather}>get weather</button>
+    <h1>
+      hi
+    </h1>
+    <Weather />
   </div>
 )
+
 
 export default App

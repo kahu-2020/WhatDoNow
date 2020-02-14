@@ -1,39 +1,23 @@
 import request from 'superagent'
+import { getWeatherApi } from '../api'
 
-export const SHOW_ERROR = 'SHOW_ERROR'
-export const RECEIVE_POSTS = 'RECEIVE_POSTS'
-export const REQUEST_POSTS = 'REQUEST_POSTS'
 
-export const requestPosts = () => {
+export const GOT_WEATHER = 'GOT_WEATHER'
+
+export function gotWeather(weather) {
+
   return {
-    type: REQUEST_POSTS
+    type: 'GOT_WEATHER',
+    weather: weather.consolidated_weather.map(weather => (weather.weather_state_name)),
   }
 }
 
-export const receivePosts = (posts) => {
-  return {
-    type: RECEIVE_POSTS,
-    posts: posts.map(post => post.data)
-  }
-}
-
-export const showError = (errorMessage) => {
-  return {
-    type: SHOW_ERROR,
-    errorMessage: errorMessage
-  }
-}
-
-export function fetchPosts (city) {
+export function getWeather() {
   return (dispatch) => {
-    dispatch(requestPosts())
-    return request
-      .get(`/api/v1/weather/weather/${city}`)
-      .then(res => {
-        dispatch(receivePosts(res.body))
-      })
-      .catch(err => {
-        dispatch(showError(err.message))
+    getWeatherApi()
+      .then(weather => {
+        
+        return dispatch(gotWeather(weather))
       })
   }
 }
