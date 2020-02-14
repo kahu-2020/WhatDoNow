@@ -7,3 +7,11 @@ export function getWeatherApi() {
     .get(weatherUrl)
     .then(res => res.body)
 }
+
+const getActivityApi = '/api/v1/activities'
+
+export function getActApi() {
+    return request
+    .get(getActivityApi)
+    .then(res => res.body)
+}

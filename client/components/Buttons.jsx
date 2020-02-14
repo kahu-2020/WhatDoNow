@@ -8,13 +8,13 @@ class Buttons extends React.Component {
     }
 
     getActivities = () => {
-        console.log("I am working")
+       res.render()
     }
 
     render() { 
     return (
     <div>
-        <button onClick = {this.getActivities}>I'M NOT FUCKING DOING THAT</button>
+        <button onClick = {this.props.clickThing}>I'M NOT FUCKING DOING THAT</button>
         
     </div>
     )

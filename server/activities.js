@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   
   db.getActivity()
     .then(activity => {
-      res.send('test')
+      res.json(activity)
     })
 })
 
