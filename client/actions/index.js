@@ -1,7 +1,6 @@
 import request from 'superagent'
 import { getWeatherApi } from '../api'
 
-
 export const GOT_WEATHER = 'GOT_WEATHER'
 
 export function gotWeather(weather) {
@@ -22,5 +21,3 @@ export function getWeather() {
       })
   }
 }
-
-// map(weather => (weather.weather_state_name))
