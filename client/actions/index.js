@@ -21,14 +21,3 @@ export function getWeather() {
       })
   }
 }
-
-export const SHOW_ERROR = 'SHOW_ERROR'
-
-
-export const getActivity = () => {
-  return {
-    type: GET_ACTIVITY
-  }
-}
-
-// .map(weather => (weather.weather_state_name))

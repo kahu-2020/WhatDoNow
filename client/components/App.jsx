@@ -8,10 +8,10 @@ const App = () => (
   
 
   <div>
-    <h1 >I'M GOING TO BE WHOLESOME <br />
-      AS FUCK AND DO SOME</h1>
-    <Activity/>
-    <Buttons/>
+    <h1 className='header'>I'M GOING TO BE <br />
+    WHOLESOME AS FUCK, <br></br> AND DO SOME</h1>
+    <Activity />
+    <Buttons />
     <Weather />
   </div>
  

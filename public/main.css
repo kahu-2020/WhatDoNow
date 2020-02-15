@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    font-family: 'Coda Caption', sans-serif;
+    text-align: center;
+}
+
+
+.header {
+    padding-top: 50px;
+    scroll-padding-bottom: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.active {
+    padding-top: 90px;
+    scroll-padding-bottom: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+}
+
+.weather {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 140px;
+}
+
+.corners {
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px
+}
