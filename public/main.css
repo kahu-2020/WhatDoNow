@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: gray;
     font-family: 'Coda Caption', sans-serif;
     text-align: center;
 }
@@ -40,4 +40,13 @@ h1 {
 
 h2 {
     font-size: 40px
+}
+
+
+
+.divv {
+
+    margin: 0;
+    padding: 0;
+    color: #cdcdcd;
 }
